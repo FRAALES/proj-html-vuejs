@@ -1,4 +1,5 @@
-<script setup>
+<script>
+// Qui va il codice JavaScript
 import { ref } from 'vue'
 
 defineProps({
@@ -9,6 +10,7 @@ const count = ref(0)
 </script>
 
 <template>
+  <!-- Il template si divide in sections -->
   <h1>{{ msg }}</h1>
 
   <div class="card">
@@ -21,9 +23,8 @@ const count = ref(0)
 
   <p>
     Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
+    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank">create-vue</a>, the official Vue + Vite
+    starter
   </p>
   <p>
     Install
@@ -34,6 +35,7 @@ const count = ref(0)
 </template>
 
 <style scoped>
+/* Questa parte di css è relativa solo a questo componente  */
 .read-the-docs {
   color: #888;
 }
