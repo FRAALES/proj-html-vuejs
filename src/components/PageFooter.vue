@@ -28,19 +28,13 @@ export default {
 <template>
     <!-- Qui ci va l'HTML del Footer del sito 'Food Corner' Top Japanese restaurants for Sushi. -->
     <footer>
-        <div class="header-top">
-
-            <div class="header-top-left">
-                <div>
-                    <a href="">Download App</a>
-                    <button>iOS</button>
-                </div>
-                <a href="">Advertise with us</a>
-
-
+        <div class="footer-left-left">
+            <div class="footer-left-left-top">
+                <!-- Qui ci va il logo con sotto scritto AVADA FOOD -->
+                <img src="../assets/avada-food-logo-mob-2x.png" alt="">
             </div>
 
-            <div class="header-top-right">
+            <div class="footer-left-left-bottom">
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                 <a href=""><i class="fa-brands fa-instagram"></i></a>
                 <a href=""><i class="fa-brands fa-twitter"></i></a>
@@ -48,10 +42,7 @@ export default {
             </div>
         </div>
 
-        <div class="header-central-logo">
-            <!-- Qui ci va il logo con sotto scritto AVADA FOOD -->
-            <img src="../assets/avada-food-logo-2x.png" alt="">
-        </div>
+        <hr>
 
         <nav>
             <ul class="menu-list">
@@ -64,99 +55,37 @@ export default {
                 </li>
             </ul>
         </nav>
+
+
     </footer>
 </template>
 
 
 <style scoped>
 /* Questa parte di css è relativa solo a questo componente  */
-header {
+footer {
     width: 70%;
-    margin: 0px auto;
-}
-
-.header-top {
-
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    margin: 0px auto;
-    font-size: 10px;
-}
-
-.header-top-right {
-    width: 13%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.header-top-left {
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-a {
-    font-weight: 500;
-    color: #67615a;
-    text-decoration: inherit;
-}
-
-a:hover {
-    color: #FC7523;
-}
-
-button {
-    background-color: #FC7523;
-    color: white;
-    border: 1px solid transparent;
-    cursor: pointer;
-    margin-left: 5px;
-    font-size: 10px;
+    margin: 0 auto;
 }
 
 .menu-list {
     width: 50%;
     margin: 0px auto;
     list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+
     padding: 0;
 }
 
-.menu-list li {
-    margin-right: 10px;
+hr {
+    color: #F5F5F1;
 }
 
-.menu-list li:last-child {
-    margin-right: 0;
-}
-
-.menu-list a {
-    text-decoration: none;
-    color: black;
-}
-
-.menu-list a:hover {
-    color: #FC7523;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-img {
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%),
-}
-
-.header-central-logo {
-    position: relative;
-}
-
-nav {
-    margin-top: 150px;
+.footer-left-left-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 </style>
