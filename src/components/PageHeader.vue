@@ -49,7 +49,7 @@ export default {
 
         <div class="header-central-logo">
             <!-- Qui ci va il logo con sotto scritto AVADA FOOD -->
-            <img src="" alt="">
+            <img src="../assets/avada-food-logo-2x.png" alt="">
         </div>
 
         <nav>
