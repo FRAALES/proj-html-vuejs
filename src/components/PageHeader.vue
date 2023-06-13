@@ -68,8 +68,13 @@ export default {
 
 <style scoped>
 /* Questa parte di css è relativa solo a questo componente  */
-.header-top {
+header {
     width: 70%;
+    margin: 0px auto;
+}
+
+.header-top {
+
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
@@ -86,6 +91,7 @@ export default {
     width: 20%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 a {
@@ -106,9 +112,11 @@ button {
 }
 
 .menu-list {
+    width: 50%;
+    margin: 0px auto;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 0;
 }
@@ -130,5 +138,21 @@ button {
     color: #FC7523;
     text-decoration: underline;
     cursor: pointer;
+}
+
+img {
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%),
+}
+
+.header-central-logo {
+    position: relative;
+}
+
+nav {
+    margin-top: 150px;
 }
 </style>
