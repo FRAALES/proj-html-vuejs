@@ -74,6 +74,18 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 50px auto;
+
+
+    .footer-left-left-bottom a {
+        margin-top: 30px;
+        color: $grigioscuro;
+    }
+}
+
+a:hover {
+    color: $arancione;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .menu-list {
@@ -82,6 +94,26 @@ footer {
     list-style: none;
     padding: 0;
 }
+
+.menu-list li {
+    margin-right: 10px;
+}
+
+.menu-list li:last-child {
+    margin-right: 0;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: $grigioscuro;
+}
+
+.menu-list a:hover {
+    color: $arancione;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 hr {
     color: #F5F5F1;

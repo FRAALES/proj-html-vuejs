@@ -74,42 +74,45 @@ export default {
 header {
     width: 70%;
     margin: 0px auto;
-}
 
-.header-top {
+    .header-top {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+        font-size: 10px;
+    }
 
-    display: flex;
-    justify-content: space-between;
-    margin: 0px auto;
-    font-size: 10px;
-}
+    .header-top-right {
+        width: 13%;
+        display: flex;
+        justify-content: space-around;
+    }
 
-.header-top-right {
-    width: 13%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.header-top-left {
-    width: 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    .header-top-left {
+        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 a {
     font-weight: 500;
     color: #67615a;
     text-decoration: inherit;
+
+    &:hover {
+        color: $arancione;
+    }
 }
 
-a:hover {
-    color: #FC7523;
-}
+// a:hover {
+//     color: #FC7523;
+// }
 
 button {
-    background-color: #FC7523;
-    color: white;
+    background-color: $arancione;
+    color: $bianco;
     border: 1px solid transparent;
     cursor: pointer;
     margin-left: 5px;
@@ -140,7 +143,7 @@ button {
 }
 
 .menu-list a:hover {
-    color: #FC7523;
+    color: $arancione;
     text-decoration: underline;
     cursor: pointer;
 }
