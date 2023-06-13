@@ -96,12 +96,12 @@ header {
 
 a {
     font-weight: 500;
-    color: #646cff;
+    color: #67615a;
     text-decoration: inherit;
 }
 
 a:hover {
-    color: #535bf2;
+    color: #FC7523;
 }
 
 button {
@@ -109,6 +109,8 @@ button {
     color: white;
     border: 1px solid transparent;
     cursor: pointer;
+    margin-left: 5px;
+    font-size: 10px;
 }
 
 .menu-list {
