@@ -66,7 +66,10 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
+
 /* Questa parte di css è relativa solo a questo componente  */
 header {
     width: 70%;

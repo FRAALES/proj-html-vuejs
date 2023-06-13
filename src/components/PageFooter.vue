@@ -6,12 +6,11 @@ export default {
     data() {
         return {
             menuItems: [
-                { id: 1, label: 'Home' },
-                { id: 2, label: 'Recipes' },
-                { id: 3, label: 'Places' },
-                { id: 4, label: 'Blog' },
-                { id: 5, label: 'About' },
-                { id: 6, label: 'Contact' },
+                { id: 1, label: 'Recipes' },
+                { id: 2, label: 'Places' },
+                { id: 3, label: 'Blog' },
+                { id: 4, label: 'About' },
+                { id: 5, label: 'Contact' },
                 // Qui si possono aggiungere altre voci di menù se necessario, a seconda delle esigenze future
             ]
         };
@@ -50,32 +49,37 @@ export default {
                 <li v-for="menuItem in menuItems" :key="menuItem.id">
                     <a :href="menuItem.url">{{ menuItem.label }}</a>
                 </li>
-                <li>
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                </li>
             </ul>
         </nav>
+
+        <div>
+            <h4>CONTACT</h4>
+            <p>775 New York Ave</p>
+
+
+        </div>
 
 
     </footer>
 </template>
 
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
+
 /* Questa parte di css è relativa solo a questo componente  */
 footer {
     width: 70%;
-    margin-top: 20px;
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 50px auto;
 }
 
 .menu-list {
     width: 50%;
     margin: 0px auto;
     list-style: none;
-
-
     padding: 0;
 }
 
