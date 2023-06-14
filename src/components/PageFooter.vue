@@ -27,7 +27,7 @@ export default {
 <template>
     <!-- Qui ci va l'HTML del Footer del sito 'Food Corner' Top Japanese restaurants for Sushi. -->
     <footer>
-        <div class="footer-left-left">
+        <div class="footer-left-left percent">
             <div class="footer-left-left-top">
                 <!-- Qui ci va il logo con sotto scritto AVADA FOOD -->
                 <img src="../assets/avada-food-logo-mob-2x.png" alt="">
@@ -43,7 +43,7 @@ export default {
 
         <hr>
 
-        <nav>
+        <nav class="percent">
             <ul class="menu-list">
                 <!-- Iterazione delle voci di menù e rendering dinamico -->
                 <li v-for="menuItem in menuItems" :key="menuItem.id">
@@ -54,10 +54,10 @@ export default {
 
         <hr>
 
-        <div>
+        <div class="percent footer-right">
             <h4>CONTACT</h4>
             <div class="d-flex">
-                <div>
+                <div class="icone-footer">
                     <i class="fa-sharp fa-solid fa-location-dot"></i>
                 </div>
                 <div>
@@ -66,7 +66,7 @@ export default {
             </div>
 
             <div class="d-flex">
-                <div>
+                <div class="icone-footer">
                     <i class="fa-solid fa-phone-flip"></i>
                 </div>
                 <div>
@@ -75,7 +75,7 @@ export default {
             </div>
 
             <div class="d-flex">
-                <div>
+                <div class="icone-footer">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
                 <div>
@@ -86,31 +86,43 @@ export default {
 
         <hr>
 
-        <div>
+        <div class="percent footer-right">
             <h4>GET OUR APP!</h4>
-            <div class="rettangolo d-flex">
-                <div>
+            <!-- Primo bottone -->
+            <button class="d-flex">
+                <div class="icone-footer-right-right">
                     <i class="fa-solid fa-play"></i>
                 </div>
                 <div>
                     <h5>GET IT ON</h5>
                     <h3>Google Play</h3>
                 </div>
-            </div>
+            </button>
 
-            <div class="rettangolo d-flex">
-                <div>
+            <!-- Secondo bottone -->
+            <button class="d-flex">
+                <div class="icone-footer-right-right">
                     <i class="fa-brands fa-apple"></i>
                 </div>
                 <div>
                     <h5>Download on the</h5>
                     <h3>App Store</h3>
                 </div>
-            </div>
+            </button>
         </div>
-
-
     </footer>
+
+    <section class="bottom">
+        <hr>
+        <p class="copyright">
+            <span class="c">
+                C
+            </span>
+            <span>
+                Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress
+            </span>
+        </p>
+    </section>
 </template>
 
 
@@ -130,6 +142,10 @@ footer {
         margin-top: 30px;
         color: $grigioscuro;
     }
+
+    img {
+        width: 200px;
+    }
 }
 
 a:hover {
@@ -140,17 +156,13 @@ a:hover {
 
 .menu-list {
     width: 50%;
-    margin: 0px auto;
+    height: 80%;
+    margin: 20px auto;
     list-style: none;
     padding: 0;
-}
-
-.menu-list li {
-    margin-right: 10px;
-}
-
-.menu-list li:last-child {
-    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu-list a {
@@ -166,12 +178,86 @@ a:hover {
 
 
 hr {
-    color: #F5F5F1;
+    color: $grigio;
 }
 
 .footer-left-left-bottom {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+
+    a {
+        margin-right: 10px;
+
+        hover {
+            color: $arancione;
+        }
+    }
+}
+
+.percent {
+    width: 25%;
+}
+
+h4 {
+    color: $arancione;
+}
+
+.footer-right {
+    margin-left: 30px;
+    color: $grigioscuro;
+}
+
+.icone-footer {
+    margin: 20px;
+}
+
+.icone-footer-right-right {
+    font-size: 80px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+}
+
+button {
+    color: $grigioscuro;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid;
+    margin-bottom: 20px;
+    height: 30%;
+    width: 100%;
+
+
+    :hover {
+        cursor: pointer;
+        color: $arancione;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
+//Qui iniziano le regole dell'ultimo pezzettino in fondo
+
+.bottom {
+    background-color: $grigio;
+    color: $grigioscuro;
+    height: 100px;
+    width: 100%;
+}
+
+.copyright {
+    margin: 30px auto;
+    width: 50%;
+}
+
+.c {
+    border-radius: 100%;
+    border: 1px solid;
+    margin: 0 3px;
+    padding-left: 3px;
+    padding-top: 1px;
 }
 </style>
