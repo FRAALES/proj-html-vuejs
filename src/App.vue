@@ -3,12 +3,14 @@
 import PageHeader from './components/PageHeader.vue';
 import PageFooter from './components/PageFooter.vue';
 import FoodCorner from './components/FoodCorner.vue';
+import PopularRecipes from './components/PopularRecipes.vue';
 
 export default {
   components: {
     PageHeader,
     PageFooter,
-    FoodCorner
+    FoodCorner,
+    PopularRecipes
   }
 }
 </script>
@@ -22,6 +24,9 @@ export default {
     <FoodCorner />
   </section>
   <section>
+    <PopularRecipes />
+  </section>
+  <section>
     <PageFooter />
   </section>
 </template>
@@ -32,5 +37,6 @@ export default {
 
 body {
   background-color: $grigio;
+  font-family: 'Times New Roman', Times, serif;
 }
 </style>

@@ -133,9 +133,7 @@ export default {
     color: $grigioscuro;
 }
 
-
 // Qui inizia il css del cards-container
-
 .box-bianco {
     width: 60%;
     margin: -50px auto 100px;
@@ -156,7 +154,6 @@ export default {
 .card {
     width: calc(100% / 3);
 
-
     .didascalia {
         text-align: center;
         max-width: 85%;
@@ -166,5 +163,4 @@ export default {
         font-size: 13px;
         color: $grigioscuro;
     }
-}
-</style>
+}</style>
