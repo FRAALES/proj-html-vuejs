@@ -25,6 +25,10 @@ export default {
 }
 
 .unicodiv {
-    display: block;
+    display: inline-block;
+
+    img {
+        width: calc(100% / 4);
+    }
 }
 </style>
