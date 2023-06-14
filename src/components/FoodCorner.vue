@@ -89,7 +89,7 @@ export default {
 }
 
 .immagine-grande {
-    background-image: url("../assets/single-post-img3-600x395.jpg");
+    background-image: url("../assets/single-post-img3-1200x790.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -163,4 +163,5 @@ export default {
         font-size: 13px;
         color: $grigioscuro;
     }
-}</style>
+}
+</style>
