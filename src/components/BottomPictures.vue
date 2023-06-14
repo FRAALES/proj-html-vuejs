@@ -6,7 +6,10 @@ export default {
 
 <template>
     <div class="unicodiv">
-
+        <img src="../assets/Yogurt-Nan-400x263.jpg" alt="">
+        <img src="../assets/Mixed-fruits-400x263.jpg" alt="">
+        <img src="../assets/fi-korean-food-400x263.jpg" alt="">
+        <img src="../assets/r-michelle-tsang-500721-unsplash-min-400x263.jpg" alt="">
     </div>
 </template>
 
@@ -19,5 +22,9 @@ export default {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.unicodiv {
+    display: block;
 }
 </style>
