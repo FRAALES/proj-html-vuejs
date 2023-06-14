@@ -8,11 +8,14 @@ export default {
 <template>
     <div class="immagine-grande">
         <div class="rettangolo-centrale">
-            <div class="titolo-centrale">
+            <div class="box-arancione">
+                <h5>TODAY'S PICK</h5>
+            </div>
+            <div>
                 <h1>
                     Food Corner: Top Japanese Restaurants for Sushi
                 </h1>
-                <p>
+                <p class="data">
                     March 25, 2019
                 </p>
             </div>
@@ -33,32 +36,47 @@ export default {
 }
 
 .immagine-grande {
-    width: 100%;
-    height: 500px;
     background-image: url("../assets/single-post-img3-600x395.jpg");
-    margin-top: 20px;
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 200px;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.rettangolo-centrale {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
     position: relative;
+}
 
-    .rettangolo-centrale {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 600px;
-        height: 200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 10px;
-        padding: 50px;
+.box-arancione {
+    background-color: $arancione;
+    display: inline-block;
+    padding: 10px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
 
-        .titolo-centrale {
-            width: 80%;
-        }
-    }
+.rettangolo-centrale h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.data {
+    margin-top: 10px;
+    color: $grigioscuro;
 }
 </style>
