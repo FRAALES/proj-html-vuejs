@@ -137,13 +137,34 @@ export default {
 // Qui inizia il css del cards-container
 
 .box-bianco {
-    width: 80%;
-    max-width: 600px;
-    margin: -50px auto 50px;
+    width: 60%;
+    margin: -50px auto 100px;
     background-color: white;
+    padding: 30px;
+
+    h3 {
+        text-align: center;
+        margin: 0 auto 15px;
+        color: $grigioscuro;
+    }
 }
 
 .cards-container {
     display: flex;
+}
+
+.card {
+    width: calc(100% / 3);
+
+
+    .didascalia {
+        text-align: center;
+        max-width: 85%;
+    }
+
+    .signature-didascalia {
+        font-size: 13px;
+        color: $grigioscuro;
+    }
 }
 </style>
