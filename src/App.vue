@@ -4,13 +4,15 @@ import PageHeader from './components/PageHeader.vue';
 import PageFooter from './components/PageFooter.vue';
 import FoodCorner from './components/FoodCorner.vue';
 import PopularRecipes from './components/PopularRecipes.vue';
+import BottomPictures from './components/BottomPictures.vue';
 
 export default {
   components: {
     PageHeader,
     PageFooter,
     FoodCorner,
-    PopularRecipes
+    PopularRecipes,
+    BottomPictures
   }
 }
 </script>
@@ -25,6 +27,9 @@ export default {
   </section>
   <section>
     <PopularRecipes />
+  </section>
+  <section>
+    <BottomPictures />
   </section>
   <section>
     <PageFooter />
