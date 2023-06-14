@@ -246,6 +246,7 @@ button {
     color: $grigioscuro;
     height: 100px;
     width: 100%;
+    font-size: 15px;
 }
 
 .copyright {

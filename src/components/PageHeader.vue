@@ -151,9 +151,8 @@ button {
 img {
     height: 100px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%),
+    top: 99%;
+    left: 43%;
 }
 
 .header-central-logo {
