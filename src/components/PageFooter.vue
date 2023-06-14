@@ -52,11 +52,61 @@ export default {
             </ul>
         </nav>
 
+        <hr>
+
         <div>
             <h4>CONTACT</h4>
-            <p>775 New York Ave</p>
+            <div class="d-flex">
+                <div>
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                    <p>775 New York Ave, Brooklyn, Kings, New York 11203</p>
+                </div>
+            </div>
 
+            <div class="d-flex">
+                <div>
+                    <i class="fa-solid fa-phone-flip"></i>
+                </div>
+                <div>
+                    <p>+0100-505-0000</p>
+                </div>
+            </div>
 
+            <div class="d-flex">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                    <p>info@your-domain.com</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <h4>GET OUR APP!</h4>
+            <div class="rettangolo d-flex">
+                <div>
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div>
+                    <h5>GET IT ON</h5>
+                    <h3>Google Play</h3>
+                </div>
+            </div>
+
+            <div class="rettangolo d-flex">
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                </div>
+                <div>
+                    <h5>Download on the</h5>
+                    <h3>App Store</h3>
+                </div>
+            </div>
         </div>
 
 
