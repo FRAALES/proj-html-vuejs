@@ -154,9 +154,20 @@ export default {
 .card {
     width: calc(100% / 3);
 
+    .picture {
+        display: inline-block;
+        width: 250px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .didascalia {
         text-align: center;
-        max-width: 85%;
+        max-width: 95%;
     }
 
     .signature-didascalia {
