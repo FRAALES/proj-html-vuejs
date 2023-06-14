@@ -2,11 +2,13 @@
 <script>
 import PageHeader from './components/PageHeader.vue';
 import PageFooter from './components/PageFooter.vue';
+import FoodCorner from './components/FoodCorner.vue';
 
 export default {
   components: {
     PageHeader,
-    PageFooter
+    PageFooter,
+    FoodCorner
   }
 }
 </script>
@@ -18,6 +20,9 @@ export default {
   </section>
   <section>
     <PageFooter />
+  </section>
+  <section>
+    <FoodCorner />
   </section>
 </template>
 
