@@ -19,10 +19,10 @@ export default {
     <PageHeader />
   </section>
   <section>
-    <PageFooter />
+    <FoodCorner />
   </section>
   <section>
-    <FoodCorner />
+    <PageFooter />
   </section>
 </template>
 

@@ -89,26 +89,10 @@ export default {
         <div class="percent footer-right">
             <h4>GET OUR APP!</h4>
             <!-- Primo bottone -->
-            <button class="d-flex">
-                <div class="icone-footer-right-right">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                <div>
-                    <h5>GET IT ON</h5>
-                    <h3>Google Play</h3>
-                </div>
-            </button>
+            <img src="../assets/download-android.png" alt="">
 
             <!-- Secondo bottone -->
-            <button class="d-flex">
-                <div class="icone-footer-right-right">
-                    <i class="fa-brands fa-apple"></i>
-                </div>
-                <div>
-                    <h5>Download on the</h5>
-                    <h3>App Store</h3>
-                </div>
-            </button>
+            <img src="../assets/download-app-store.png" alt="">
         </div>
     </footer>
 
