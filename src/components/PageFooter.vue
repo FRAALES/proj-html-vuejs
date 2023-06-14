@@ -26,75 +26,77 @@ export default {
 
 <template>
     <!-- Qui ci va l'HTML del Footer del sito 'Food Corner' Top Japanese restaurants for Sushi. -->
-    <footer>
-        <div class="footer-left-left percent">
-            <div class="footer-left-left-top">
-                <!-- Qui ci va il logo con sotto scritto AVADA FOOD -->
-                <img src="../assets/avada-food-logo-mob-2x.png" alt="">
-            </div>
-
-            <div class="footer-left-left-bottom">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-
-        <hr>
-
-        <nav class="percent">
-            <ul class="menu-list">
-                <!-- Iterazione delle voci di menù e rendering dinamico -->
-                <li v-for="menuItem in menuItems" :key="menuItem.id">
-                    <a :href="menuItem.url">{{ menuItem.label }}</a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-
-        <div class="percent footer-right">
-            <h4>CONTACT</h4>
-            <div class="d-flex">
-                <div class="icone-footer">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+    <div class="footer-container">
+        <footer>
+            <div class="footer-left-left percent">
+                <div class="footer-left-left-top">
+                    <!-- Qui ci va il logo con sotto scritto AVADA FOOD -->
+                    <img src="../assets/avada-food-logo-mob-2x.png" alt="">
                 </div>
-                <div>
-                    <p>775 New York Ave, Brooklyn, Kings, New York 11203</p>
+
+                <div class="footer-left-left-bottom">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
 
-            <div class="d-flex">
-                <div class="icone-footer">
-                    <i class="fa-solid fa-phone-flip"></i>
+            <hr>
+
+            <nav class="percent">
+                <ul class="menu-list">
+                    <!-- Iterazione delle voci di menù e rendering dinamico -->
+                    <li v-for="menuItem in menuItems" :key="menuItem.id">
+                        <a :href="menuItem.url">{{ menuItem.label }}</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <hr>
+
+            <div class="percent footer-right">
+                <h4>CONTACT</h4>
+                <div class="d-flex">
+                    <div class="icone-footer">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <p>775 New York Ave, Brooklyn, Kings, New York 11203</p>
+                    </div>
                 </div>
-                <div>
-                    <p>+0100-505-0000</p>
+
+                <div class="d-flex">
+                    <div class="icone-footer">
+                        <i class="fa-solid fa-phone-flip"></i>
+                    </div>
+                    <div>
+                        <p>+0100-505-0000</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="icone-footer">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p>info@your-domain.com</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="d-flex">
-                <div class="icone-footer">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div>
-                    <p>info@your-domain.com</p>
-                </div>
+            <hr>
+
+            <div class="percent footer-right">
+                <h4>GET OUR APP!</h4>
+                <!-- Primo bottone -->
+                <img src="../assets/download-android.png" alt="">
+
+                <!-- Secondo bottone -->
+                <img src="../assets/download-app-store.png" alt="">
             </div>
-        </div>
-
-        <hr>
-
-        <div class="percent footer-right">
-            <h4>GET OUR APP!</h4>
-            <!-- Primo bottone -->
-            <img src="../assets/download-android.png" alt="">
-
-            <!-- Secondo bottone -->
-            <img src="../assets/download-app-store.png" alt="">
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <section class="bottom">
         <hr>
@@ -115,6 +117,12 @@ export default {
 @use '../styles/partials/mixins.scss' as *;
 
 /* Questa parte di css è relativa solo a questo componente  */
+.footer-container {
+    background-color: white;
+    height: 350px;
+    padding: 40px 0;
+}
+
 footer {
     width: 70%;
     display: flex;

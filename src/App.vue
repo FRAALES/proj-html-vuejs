@@ -31,6 +31,6 @@ export default {
 @use './styles/general.scss' as *;
 
 body {
-  background-color: $bianco;
+  background-color: $grigio;
 }
 </style>

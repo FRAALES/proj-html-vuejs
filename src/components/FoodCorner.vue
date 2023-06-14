@@ -19,6 +19,59 @@ export default {
                     March 25, 2019
                 </p>
             </div>
+
+        </div>
+    </div>
+
+    <div class="box-bianco">
+        <h3>
+            FOODIE JOURNAL
+        </h3>
+        <div class="cards-container">
+            <!-- Questa è la prima card -->
+            <div class="card">
+                <div class="picture">
+                    <img src="../assets/single-post-img3-200x132.jpg" alt="">
+                </div>
+                <div class="didascalia">
+                    <div class="titolo-didascalia">
+                        <h3> Food Corner: Top Japanese Restaurants for Sushi</h3>
+                    </div>
+                    <div class="signature-didascalia">
+                        By admin | March 25th, 2019
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questa è la seconda card -->
+            <div class="card">
+                <div class="picture">
+                    <img src="../assets/fi-roundup-200x132.jpg" alt="">
+                </div>
+                <div class="didascalia">
+                    <div class="titolo-didascalia">
+                        <h3>Roundup: My New Favourite Recipes For Healthy Living</h3>
+                    </div>
+                    <div class="signature-didascalia">
+                        By admin | March 25th, 2019
+                    </div>
+                </div>
+            </div>
+
+            <!-- Questa è la terza card -->
+            <div class="card">
+                <div class="picture">
+                    <img src="../assets/fi-toasts-200x132.jpg" alt="">
+                </div>
+                <div class="didascalia">
+                    <div class="titolo-didascalia">
+                        <h3>Why These Toasts with Tea are My New Favourite</h3>
+                    </div>
+                    <div class="signature-didascalia">
+                        By admin | March 25th, 2019
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -78,5 +131,19 @@ export default {
 .data {
     margin-top: 10px;
     color: $grigioscuro;
+}
+
+
+// Qui inizia il css del cards-container
+
+.box-bianco {
+    width: 80%;
+    max-width: 600px;
+    margin: -50px auto 50px;
+    background-color: white;
+}
+
+.cards-container {
+    display: flex;
 }
 </style>
