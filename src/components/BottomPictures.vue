@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="unicodiv">
+    <div class="img-container">
         <img src="../assets/Yogurt-Nan-400x263.jpg" alt="">
         <img src="../assets/Mixed-fruits-400x263.jpg" alt="">
         <img src="../assets/fi-korean-food-400x263.jpg" alt="">
@@ -24,11 +24,17 @@ export default {
     padding: 0;
 }
 
-.unicodiv {
-    display: inline-block;
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     img {
         width: calc(100% / 4);
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
     }
 }
 </style>
