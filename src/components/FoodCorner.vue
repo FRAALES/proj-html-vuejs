@@ -149,14 +149,14 @@ export default {
 
 .cards-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .card {
     width: calc(100% / 3);
 
     .picture {
-        display: inline-block;
-        width: 250px;
+        width: 80%;
 
         img {
             width: 100%;
@@ -167,7 +167,7 @@ export default {
 
     .didascalia {
         text-align: center;
-        max-width: 95%;
+        max-width: 80%;
     }
 
     .signature-didascalia {

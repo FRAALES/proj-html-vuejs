@@ -36,7 +36,7 @@ export default {
     }
 
     p {
-        width: 40%;
+        max-width: 30%;
         margin: 0 auto 50px;
     }
 }
